@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head><title>linearregrassion</title>
+
+<style>
+form {
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+</style>
+
+
+</head>
+    <body style="background-color: bisque;">
+        <form  action="{% url 'linear' %}" method="GET" style="background-color: aqua; border-radius: 20px;"> 
+<h1> Insurance Predictor from age  
+            <input type="number" name="n1" placeholder="Enter Your Age is : "><br><br>  
+            <button type="submit">calculator</button><br><br>
+            <h2>result:{{result}}</h2>
+        </form>
+    </body>
+</html>
